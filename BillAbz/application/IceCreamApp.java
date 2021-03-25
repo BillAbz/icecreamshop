@@ -2,6 +2,7 @@ package icecreamShop.BillAbz.application;
 
 import icecreamShop.BillAbz.eatables.Cone;
 import icecreamShop.BillAbz.eatables.Magnum;
+import icecreamShop.BillAbz.sellers.IceCreamCar;
 import icecreamShop.BillAbz.sellers.IceCreamSalon;
 import icecreamShop.BillAbz.sellers.PriceList;
 
@@ -11,9 +12,12 @@ public class IceCreamApp {
         IceCreamSalon iceCreamSalon = new IceCreamSalon();
         iceCreamSalon.orderMagnum(Magnum.MagnumType.ALPINENUTS);
         iceCreamSalon.orderCone(Cone.Flavor.values());
-        
+
 
         System.out.println(iceCreamSalon.getProfit());
+
+        IceCreamCar iceCreamCar = new IceCreamCar();
+        iceCreamCar.orderMagnum(Magnum.MagnumType.MILKCHOCOLATE);
 
     }
 }
